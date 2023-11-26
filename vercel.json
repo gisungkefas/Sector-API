@@ -13,6 +13,13 @@
         "dest": "/api/uploads"
       },
       {
+        "src": "/favicon.ico",
+        "status": 404,
+        "headers": {
+          "cache-control": "public, max-age=0, must-revalidate"
+        }
+      },
+      {
         "src": "/(.*)",
         "dest": "/"
       }
