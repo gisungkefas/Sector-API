@@ -9,7 +9,6 @@ const userRoute = require('./route/userDataRoute');
 
 const app = express();
 
-// Serve favicon
 try {
   app.use(favicon(path.join(__dirname, 'favicon.ico')));
 } catch (error) {
@@ -18,6 +17,11 @@ try {
 
 app.use(express.json());
 app.use(cors());
+
+app.get('/', (req, res) => {
+  res.send('Welcome to the root path!');
+});
+
 app.use('/api', userRoute);
 
 mongoose
