@@ -14,7 +14,7 @@
       },
       {
         "src": "/favicon.ico",
-        "status": 404,
+        "status": 204,
         "headers": {
           "cache-control": "public, max-age=0, must-revalidate"
         }
