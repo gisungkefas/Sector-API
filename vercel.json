@@ -1,13 +1,6 @@
+
 {
-    "routes": [
-      {
-        "src": "/api/sectors",
-        "dest": "/api/sectors"
-      },
-      {
-        "src": "/api/uploads",
-        "dest": "/api/uploads"
-      }
-    ]
-  }
-  
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
