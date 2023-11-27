@@ -1,8 +1,4 @@
 {
-    "version": 2,
-    "builds": [
-      {"src": "./app.js", "use": "@vercel/node"}
-    ],
     "routes": [
       {
         "src": "/api/sectors",
@@ -11,10 +7,6 @@
       {
         "src": "/api/uploads",
         "dest": "/api/uploads"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"
       }
     ]
   }
