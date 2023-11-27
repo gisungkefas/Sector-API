@@ -11,6 +11,20 @@ router.get("/sectors", (req, res, next) => {
   });
 });
 
+router.get("/uploads", async(req, res)=>{
+
+  try {
+    const details = await UserData.find()
+    res.status(200).json({
+      data: details
+    })
+    
+  } catch (error) {
+    console.log('Error', error)
+  }
+
+})
+
 router.post("/uploads", async (req, res) => {
     try {
       // Joi validation schema
